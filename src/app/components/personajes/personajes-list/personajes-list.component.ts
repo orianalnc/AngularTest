@@ -20,6 +20,7 @@ export class PersonajesListComponent implements OnInit {
       this.personajes = response.results;
       console.log('Personajes ', this.personajes);
     });
+
   }
 
 

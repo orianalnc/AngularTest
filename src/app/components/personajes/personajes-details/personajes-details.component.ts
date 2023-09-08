@@ -28,6 +28,10 @@ export class PersonajesDetailsComponent implements OnInit {
         console.log('Personaje Detail ', this.personajes);
         console.log('Personaje ', response.url);
       });
+
+    this.route.params.subscribe((params) => {
+      console.log(params);
+    });
   }
 
   onBack() {

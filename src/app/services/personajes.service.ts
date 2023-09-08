@@ -8,6 +8,7 @@ import { Personajes } from '../models/personajes';
 @Injectable({
   providedIn: 'root'
 })
+
 export class PersonajesService {
   private apiURL = 'https://swapi.dev/api/people';
 
