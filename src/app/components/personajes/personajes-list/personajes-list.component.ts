@@ -14,19 +14,19 @@ export class PersonajesListComponent implements OnInit {
 
   personajes: Personajes[] = [];
 
+
   ngOnInit(): void {
     this.personajeService.getAll().subscribe((response) => {
-      //console.log(response.results)
       this.personajes = response.results;
       console.log('Personajes ', this.personajes);
     });
   }
 
+
+
   onDetail(id: number){
+
     this.router.navigate(['people', id]).catch(e => console.error(e));
-   /* this.route.params.subscribe(params => {
-      console.log(params);
-    });*/
   }
 
 

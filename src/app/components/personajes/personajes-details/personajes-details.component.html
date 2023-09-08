@@ -1,55 +1,50 @@
+<div class="container" *ngIf="personajes">
 
+  <h4>Detalles del personaje {{ personajes.name }}</h4>
 
-<div class="container"  *ngIf="personajes">
-
-  <div class="">
-    <h4>Detalles del personame {{ personajes.name }}</h4>
-
-  </div>
 
   <br>
 
-  <div class="card"></div>
+  <div class="row pb-4">
+    <div class="col-3">Name</div>
+    <div class="col-9">{{ personajes.name }}</div>
+
+    <div class="col-3">Eye Color</div>
+    <div class="col-9">{{ personajes.eye_color }}</div>
 
 
-  <table class="table ">
-    <tr>
-      <th>Name</th>
-      <th>Eye Color</th>
-      <th>Gender</th>
-      <th>Height</th>
-      <th>Mass</th>
-      <th>Hair Color</th>
-      <th>Skin Color</th>
-      <th>Birth Year</th>
-      <th>Home World</th>
-      <th>Url</th>
+    <div class="col-3">Gender</div>
+    <div class="col-9">{{ personajes.gender }}</div>
 
 
 
-    </tr>
-    <tr  >
-
-      <td>{{ personajes.name }}</td>
-      <td>{{ personajes.eye_color }}</td>
-      <td>{{ personajes.gender }}</td>
-      <td>{{ personajes.height }}</td>
-      <td>{{ personajes.mass }}</td>
-      <td>{{ personajes.hair_color }}</td>
-      <td>{{ personajes.skin_color }}</td>
-      <td>{{ personajes.birth_year }}</td>
-      <td>{{ personajes.homeworld }}</td>
-      <td>{{ personajes.url }}</td>
+    <div class="col-3">Height</div>
+    <div class="col-9">{{ personajes.height }}</div>
 
 
 
+    <div class="col-3">Mass</div>
+    <div class="col-9">{{ personajes.mass }}</div>
+
+    <div class="col-3">Hair Color</div>
+    <div class="col-9">{{ personajes.hair_color }}</div>
+
+    <div class="col-3">Skin Color</div>
+    <div class="col-9">{{ personajes.skin_color }}</div>
+
+    <div class="col-3">Birth Year</div>
+    <div class="col-9">{{ personajes.birth_year }}</div>
+
+    <div class="col-3">Home World</div>
+    <div class="col-9">{{ personajes.homeworld }}</div>
+
+    <div class="col-3">Url</div>
+    <div class="col-9">{{ personajes.url }}</div>
+
+  </div>
 
 
-
-    </tr>
-  </table>
-
-  <button (click)="onBack()">Volver</button>
+  <button class="btn btn-primary" (click)="onBack()">Volver</button>
 
 
 </div>
