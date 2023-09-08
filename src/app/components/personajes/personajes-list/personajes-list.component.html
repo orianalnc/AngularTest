@@ -1,0 +1,31 @@
+<div class="container">
+
+  <div class="">
+    <h4>Lista de personajes</h4>
+
+  </div>
+
+  <br>
+
+  <div class="card"></div>
+
+
+  <table class="table ">
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+
+
+    </tr>
+    <tr *ngFor="let item of personajes" >
+      <td>{{ item.gender }}</td>
+      <td>{{ item.name }}</td>
+      <td> <a href="#" [routerLink]="['/people/', item.id  ]" class="btn btn-primary me-2 btn-sm">Ver detalles</a></td>
+
+
+
+    </tr>
+  </table>
+
+
+</div>
