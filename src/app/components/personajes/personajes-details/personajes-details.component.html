@@ -1,1 +1,55 @@
-<p>personajes-details works!</p>
+
+
+<div class="container"  *ngIf="personajes">
+
+  <div class="">
+    <h4>Detalles del personame {{ personajes.name }}</h4>
+
+  </div>
+
+  <br>
+
+  <div class="card"></div>
+
+
+  <table class="table ">
+    <tr>
+      <th>Name</th>
+      <th>Eye Color</th>
+      <th>Gender</th>
+      <th>Height</th>
+      <th>Mass</th>
+      <th>Hair Color</th>
+      <th>Skin Color</th>
+      <th>Birth Year</th>
+      <th>Home World</th>
+      <th>Url</th>
+
+
+
+    </tr>
+    <tr  >
+
+      <td>{{ personajes.name }}</td>
+      <td>{{ personajes.eye_color }}</td>
+      <td>{{ personajes.gender }}</td>
+      <td>{{ personajes.height }}</td>
+      <td>{{ personajes.mass }}</td>
+      <td>{{ personajes.hair_color }}</td>
+      <td>{{ personajes.skin_color }}</td>
+      <td>{{ personajes.birth_year }}</td>
+      <td>{{ personajes.homeworld }}</td>
+      <td>{{ personajes.url }}</td>
+
+
+
+
+
+
+    </tr>
+  </table>
+
+  <button (click)="onBack()">Volver</button>
+
+
+</div>

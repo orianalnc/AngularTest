@@ -10,6 +10,7 @@ import { PersonajesService } from 'src/app/services/personajes.service';
 })
 export class PersonajesDetailsComponent implements OnInit {
 
+
   constructor(public personajeService: PersonajesService,  private route: ActivatedRoute,
     private router: Router) {}
 
@@ -26,7 +27,13 @@ export class PersonajesDetailsComponent implements OnInit {
       console.log('Personaje ', response.url);
     });
 
+ 
 
+
+  }
+
+  onBack(){
+    this.router.navigate(['people']).catch(e => console.error(e));
   }
 
 
